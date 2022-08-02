@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <p1> Ejercicio1 POO Fibonacci </p1> 
+    </head>
+    <script>
+        function Fib(numeroDeElemento)
+        {
+        var fibonacci = []; // Para que se guarde en un array vacio
+        fibonacci[0] = 0; // Ingreso el primero valor que es 0
+        fibonacci[1] = 1; // Ingreso el segundo valor que es 1
+        for (var i = 2; i <= numeroDeElemento; i++)  // comienza en la posicion 2 
+            { 
+            fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
+            }
+            return fibonacci;
+        }
+        var k = Fib();
+        console.log(k); // 0,1,1,2,3,5...
+    </script>
+</html>

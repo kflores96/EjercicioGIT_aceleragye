@@ -13,7 +13,7 @@ let estudiante1 = new estudiante("karla", "25"); // instanciar un objeto
 estudiante1.hablar; */
 
 // Declaracion de clase
-class Animal {
+/* class Animal {
     // metodos
     nombre;
     edad;
@@ -35,5 +35,4 @@ console.log(pato.hablar());
 const perro = new Animal();
 console.log(perro.hablar());
 
-
-
+*/
