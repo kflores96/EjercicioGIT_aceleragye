@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <p1> Ejercicio2 POO Ordenar arreglo </p1> 
+    </head>
+    <script>
+        const POO = Ordenar => {
+        const Ejer = Ordenar.length;
+        for (let i = 0; i < Ejer; i++ ) {
+         for (let j = 0; j < Ejer - 1 - i; j++ ) {
+        if ( Ordenar[ j ] > Ordenar[ j + 1 ] ) {
+        [ Ordenar[ j ], Ordenar[ j + 1 ] ] = [ Ordenar[ j + 1 ], Ordenar[ j ] ];
+                }
+        var SoloNumeros = Ordenar.filter(Ordenar =>  Number.isInteger(Ordenar));
+            }
+        }
+        return SoloNumeros;
+    };
+        Ordenar = ["KFlores", 16, 09, 1996, 01, 08, 2022, true];
+        const result = POO(Ordenar);
+        result;
+
+    </script>
+</html>
