@@ -7,8 +7,8 @@
     <script>
         const POO = Ordenar => {
         const Ejer = Ordenar.length;
-        for (let i = 0; i < Ejer; i++ ) {
-         for (let j = 0; j < Ejer - 1 - i; j++ ) {
+        for (let i = 0; i < Ejer; i++ ) {               
+         for (let j = 0; j < Ejer - 1 - i; j++ ) {      
         if ( Ordenar[ j ] > Ordenar[ j + 1 ] ) {
         [ Ordenar[ j ], Ordenar[ j + 1 ] ] = [ Ordenar[ j + 1 ], Ordenar[ j ] ];
                 }
@@ -17,6 +17,7 @@
         }
         return SoloNumeros;
     };
+        //        [0,         1,  2,    3,   4,  5,  6,    7];
         Ordenar = ["KFlores", 16, 09, 1996, 01, 08, 2022, true];
         const result = POO(Ordenar);
         result;
