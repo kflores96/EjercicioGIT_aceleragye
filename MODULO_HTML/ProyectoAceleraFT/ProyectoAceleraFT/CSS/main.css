@@ -812,6 +812,11 @@
     margin: 15px 10px 10px 10px;
 }
 
+/* SECCION MEDIOS SOCIALES */ 
+
+.footer .panel1 .filas .social {
+    display: none;
+}
 
 /* PANEL FOOTER 2 GRIS */
 
@@ -852,10 +857,6 @@
     font-weight: 500;
     line-height: 35px;
     letter-spacing: 0em;
-}
-
-.footer .panel1 .filas .fila4 .social {
-    display: none;
 }
 
 
@@ -1164,7 +1165,7 @@
     .footer .panel1 .filas {
         height: 110vh;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 40px;
+        grid-template-rows: 1fr 1fr 1fr 1fr 40px;
     }
 
     .footer .panel1 .filas .fila1 {
@@ -1197,9 +1198,23 @@
         grid-row: 3/3;
     }
 
-    .footer .panel1 .filas .fila4 .social .fab {
+    .footer .panel1 .filas .social {
+        display: inline-block;
+        grid-row: 4/4;
+        grid-column: 1/5;
+        margin: 10px;
+    }
+
+    .footer .panel1 .filas .social .fab {
         color: white;
         width: 40px;
         font-size: 70%;
+    }
+
+    .footer .panel1 .filas .columna1 {
+        grid-column: 1/5;
+        grid-row: 5/5;
+        border-top: 1px solid white;
+        background-color: black;
     }
 }
